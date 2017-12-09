@@ -1,0 +1,15 @@
+{
+  "name": "sitepackage",
+  "version": "1.0.0",
+  "description": "Portfolio website dependencies",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "tilt.js": "^1.2.1"
+  }
+}

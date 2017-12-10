@@ -25,8 +25,7 @@
 
     <!-- Custom styles -->
     <link href="static/css/agency.min.css" rel="stylesheet" type="text/css">
-    <link href="static/css/style.css" rel"stylesheet" type="text/css">
-
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
   </head>
 
   <body id="page-top">
@@ -41,16 +40,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -61,18 +54,56 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead">
+    <header id="landing" class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Welcome to my site</div>
-          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-          <div id="name-plate" data-tilt></div> <!-- Tilt element -->
+          <div id="name-plate" data-tilt>
+            <div id="inner-name-plate">
+              <h1 id="first-initial">J</h1>
+              <h2 id="second-initial">N</h2>
+            </div>
+          </div> 
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="">About Me</a>
         </div>
       </div>
     </header>
       
-
+    <!-- About me -->
+    <header id="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 col-md-offset-1">
+            <div id="profile-crop">
+              <img id="profile-img" src="img/profile.jpg" alt="Profile"/>
+            </div>
+            <div class="section-title">
+              <h2>General Info</h2>
+                <hr>
+                <p class="contact-header">Email: <span> k224liu@edu.uwaterloo.ca</span></p>
+                <p class="contact-header">Phone: <span> (613) 889-6176</span></p>
+                <p class="contact-header">LinkedIn <a href="https://linkedin.com/in/kfliu" target="_blank">Kevin Liu</a></p>
+                <p class="contact-header">Resume <a href="docs/resume.pdf" target="_blank">Click Here!</a></p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+              <div class="intro-title">
+                  <h2>HI, I'm Kevin.</h2>
+                  <hr>
+              </div>
+              <p class="intro-text">
+                  I'm a first year mechatronics engineering student at the University of Waterloo. Since I started school in September of 2016, 
+                  I've been pursuing my passions for design, programming, and problem solving at my new home in Waterloo.
+              </p>
+              <p class="intro-text">
+                  Nowadays, I spend my time developing my side projects, playing sports, hitting the gym, and of course studying. 
+              </p>
+              <p class="intro-text">
+                  Feel free to explore my site and learn more about me.
+              </p>
+          </div>
+        </div>
+      </div>
+    </header>
 
 
 
@@ -122,16 +153,6 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </footer>
@@ -144,10 +165,10 @@
     <script src="jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="static/js/agency.min.js"></script>
+    <script src="static/js/agency.js"></script>
 
     <!-- Tilt -->
-    <script src="node_modules/tilt.js/src/tilt.jquery.js"></script> <!-- Load Tilt.js library -->
+    <script src="static/js/tilt.jquery.js"></script> <!-- Load Tilt.js library -->
   </body>
 
 </html>

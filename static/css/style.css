@@ -1,0 +1,107 @@
+.wow {
+    visibility: hidden;
+}
+
+/* Starting landing page */
+#landing {
+    background: url(../../media/files/landing.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	min-height: 710px;	
+	padding-top: 60px;
+	color: #ffffff;
+}
+
+#name-plate {
+    width: 10vw;
+    height: 10vw;
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-bottom: 3vh;
+    padding-top: 1px;
+    transform-style: preserve-3d;
+}
+
+#inner-name-plate {
+    transform: translateZ(30px);
+    position: relative;
+    margin-top: 30%;
+}
+
+#first-initial {
+    color: black;
+    position: relative;
+    top: 10%;
+}
+
+#second-initial {
+    color: black;
+    position: relative;
+    top: 50%;
+    left: 10%;
+}
+
+/* About Me
+#about-me {
+	color:#FFFFFF;
+}
+
+#about-me h2 {
+	color:#FFFFFF;
+}
+
+.colored-panel {
+	background-color:#3A3A3A;
+}
+
+#profile-crop {
+	height:200px;
+	width:200px;
+	border-radius:100%;
+	border: solid hsla(37,100%,62%,0.33);
+	border-width:7px 4px 4px 4px;
+	overflow:hidden;
+	margin: 10px auto;
+}
+
+#profile-img {
+	height:190%;
+}
+
+.contact-header {
+	font-weight:bold;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.contact-header > span {
+	font-weight:normal;	
+	float:right;
+}
+
+.contact-header a {
+	font-weight:normal;	
+	float:right;
+	color:#FFFFFF;
+}
+
+.contact-header a:hover {
+	color:#c59a6d;
+}
+
+.intro-title {
+	margin-top:10%;
+}
+
+.intro-title h2 {
+	font-size:2em;
+}
+
+.intro-text {
+	line-height:25px;
+	font-size:1.25em;
+	text-align:justify;
+} */

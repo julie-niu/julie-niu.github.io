@@ -10,6 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
-    "tilt.js": "^1.2.1"
+    "js-cookie": "^2.2.0",
+    "node-sass": "^4.7.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "tilt.js": "^1.2.1",
+    "wowjs": "^1.1.3"
   }
 }

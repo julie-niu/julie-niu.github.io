@@ -25,13 +25,14 @@ class ProjectTile extends React.Component {
         this.selectProjectCallback = this.selectProjectCallback.bind(this);
     }
 
-    selectProjectCallback(event) {
-        console.log(event);
+    selectProjectCallback(event, proj) {
+        console.log(proj);
+        Cookies.set('selectedProject', proj);
     }
 
     render() {
         let projectElements = this.state.projects.map((proj) => 
-            <h1 id="proj" onClick={this.selectProjectCallback}>{proj}</h1>
+            <h1 id="proj" onClick={(e) => this.selectProjectCallback(e, proj)}>{proj}</h1>
         );
 
         return (

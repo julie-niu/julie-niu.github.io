@@ -13,7 +13,7 @@ class ProjectModal extends React.Component {
     }
 
     render() {
-
+        <h1>{Cookies.get('selectedProject')}</h1>
     }
 }
 
@@ -27,12 +27,13 @@ class ProjectTile extends React.Component {
 
     selectProjectCallback(event, proj) {
         Cookies.set('selectedProject', proj);
+        ReactDOM.render(<ProjectModal></ProjectModal>, document.getElementById('project-root'));
     }
 
     render() {
         let projectElements = this.state.projects.map((proj) => 
-            <a className="portfolio-link" data-toggle="modal" href="#portfolioModal">
-                <h1 onClick={(e) => this.selectProjectCallback(e, proj)}>{proj}</h1>
+            <a className="portfolio-link" onClick={(e) => this.selectProjectCallback(e, proj)} data-toggle="modal" href="#portfolioModal">
+                <h1>{proj}</h1>
             </a>
         );
 

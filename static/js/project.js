@@ -13,7 +13,7 @@ class ProjectModal extends React.Component {
     }
 
     render() {
-        <h1>{Cookies.get('selectedProject')}</h1>
+        return <h1>{Cookies.get('selectedProject')}</h1>;
     }
 }
 

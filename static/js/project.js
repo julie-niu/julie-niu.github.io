@@ -31,8 +31,8 @@ class ProjectTile extends React.Component {
 
     render() {
         let projectElements = this.state.projects.map((proj) => 
-            <a class="portfolio-link" onClick={(e) => this.selectProjectCallback(e, proj)} data-toggle="modal" href="#portfolioModal">
-                <h1>{proj}</h1>
+            <a className="portfolio-link" data-toggle="modal" href="#portfolioModal">
+                <h1 onClick={(e) => this.selectProjectCallback(e, proj)}>{proj}</h1>
             </a>
         );
 

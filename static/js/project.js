@@ -34,9 +34,10 @@ const projects = {'MicroInstitution': {
 class ProjectModal extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {current: null};
+        this.state = {current: 'default'};
     }
 
+    // Not working because of sibling render effect
     componentWillReceiveProps(nextProps) {
         console.log(nextProps)
         if (this.state.current != nextProps.current) {
@@ -45,8 +46,8 @@ class ProjectModal extends React.Component {
     }
 
     render() {
-        console.log(this.state);
-        return <h1>{projects[this.state.current].subtitle}</h1>;
+        var selected = Cookies.get('selectedProject');
+        return <h1>{projects[selected].subtitle}</h1>;
     }
 }
 
@@ -61,6 +62,7 @@ class ProjectTile extends React.Component {
     selectProjectCallback(event, proj) {
         Cookies.set('selectedProject', proj);
         this.setState({selected: proj});
+        // Sketchy
         ReactDOM.render(<ProjectModal current={proj}></ProjectModal>, document.getElementById('project-root'));
     }
 

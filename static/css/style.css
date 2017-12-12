@@ -123,6 +123,8 @@
 .project-tile {
 	border: 1px solid rgb(153, 153, 153);
 	height: 300px;
+	object-fit: cover;
+	object-position: center;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {

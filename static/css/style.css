@@ -10,6 +10,20 @@
 
 /* Navbar */
 #mainNav .navbar-brand {
+	color: black
+}
+#mainNav.navbar-shrink .navbar-brand {
+	color: rgb(255, 158, 108)
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+	color: black
+}
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+	color: rgb(255, 158, 108)
+}
+
+#mainNav .navbar-brand:hover {
 	color: rgb(255, 158, 108)
 }
 

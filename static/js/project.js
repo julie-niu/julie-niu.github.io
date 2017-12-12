@@ -32,14 +32,14 @@ class ProjectTile extends React.Component {
 
     render() {
         let projectElements = this.state.projects.map((proj) => 
-            <div className="col-md-4 col-sm-6 portfolio-item">
+            <div className="col-md-3 col-sm-6 portfolio-item">
                 <a className="portfolio-link" onClick={(e) => this.selectProjectCallback(e, proj)} data-toggle="modal" href="#portfolioModal">
                     <div className="portfolio-hover">
                         <div className="portfolio-hover-content">
                             <h1>{proj}</h1>
                         </div>
                     </div>
-                    <img className="img-fluid" src={"media/icons/" + proj + ".jpg"} alt=""/>
+                    <img className="img-fluid project-tile" src={"media/icons/" + proj + ".jpg"} alt=""/>
                 </a>
             </div>
         );

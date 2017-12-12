@@ -104,3 +104,8 @@
 	font-size:2em;
 }
 
+/* Projects and Work */
+.project-tile {
+	border: black solid 1px;
+}
+

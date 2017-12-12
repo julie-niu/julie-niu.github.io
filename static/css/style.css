@@ -125,7 +125,7 @@
 	height: 300px;
 }
 
-.portfolio-hover {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover {
 	background-color: rgb(255, 158, 108);
 }
 

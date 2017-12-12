@@ -10,25 +10,23 @@
 
 /* Navbar */
 #mainNav .navbar-brand {
-	color: black
-}
-#mainNav.navbar-shrink .navbar-brand {
-	color: rgb(255, 158, 108)
+	color: black;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-	color: black
-}
-#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-	color: rgb(255, 158, 108)
+	color: black;
 }
 
 #mainNav .navbar-brand:hover {
-	color: rgb(255, 158, 108)
+	color: rgb(255, 158, 108);
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-	color: rgb(255, 158, 108)
+	color: rgb(255, 158, 108);
+}
+
+#mainNav.navbar-shrink {
+	color: #c5c5c5;
 }
 
 /* Starting landing page */
@@ -89,7 +87,7 @@
 	height:200px;
 	width:200px;
 	border-radius:100%;
-	border: solid hsla(37,100%,62%,0.33);
+	border: solid rgb(255, 158, 108);
 	border-width:7px 4px 4px 4px;
 	overflow:hidden;
 	margin: 10px auto;
@@ -100,7 +98,8 @@
 }
 
 .section-title > h2 {
-    text-align: center;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .contact-header {
@@ -122,15 +121,16 @@
 }
 
 .contact-header a:hover {
-	color:#c59a6d;
+	color:rgb(255, 158, 108);;
 }
 
 .intro-title {
 	margin-top:10%;
 }
 
-.intro-title h2 {
+.intro-title > h2 {
 	font-size:2em;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Projects and Work */

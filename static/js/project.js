@@ -3,7 +3,7 @@
  */
 
 // Global project name list
-var projects = {'MicroInstitution': {
+const projects = {'MicroInstitution': {
         title: 'The Urban Library',
         subtitle: 'Micro-Institution'
     }, 
@@ -30,7 +30,7 @@ var projects = {'MicroInstitution': {
 class ProjectModal extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {current: null, projects: projects.slice()};
+        this.state = {current: null};
     }
 
     componentWillReceiveProps(nextProps) {
@@ -41,14 +41,14 @@ class ProjectModal extends React.Component {
     }
 
     render() {
-        return <h1>{this.state.projects[this.state.current].subtitle}</h1>;
+        return <h1>{projects[this.state.current].subtitle}</h1>;
     }
 }
 
 class ProjectTile extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {projects: projects.slice(), selected: null};
+        this.state = {selected: null};
 
         this.selectProjectCallback = this.selectProjectCallback.bind(this);
     }
@@ -60,12 +60,12 @@ class ProjectTile extends React.Component {
     }
 
     render() {
-        let projectElements = Object.keys(this.state.projects).map((proj) => 
+        let projectElements = Object.keys(projects).map((proj) => 
             <div className="col-md-3 col-sm-6 portfolio-item">
                 <a className="portfolio-link" onClick={(e) => this.selectProjectCallback(e, proj)} data-toggle="modal" href="#portfolioModal">
                     <div className="portfolio-hover">
                         <div className="portfolio-hover-content">
-                            <p className="project-name">{this.state.projoects[proj].title}</p>
+                            <p className="project-name">{projects[proj].title}</p>
                         </div>
                     </div>
                     <img className="img-fluid project-tile" src={"media/icons/" + proj + ".jpg"} alt=""/>

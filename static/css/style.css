@@ -8,6 +8,14 @@
 	border-top: 2px solid black;
 }
 
+p {
+	font-family: 'Crimson Text', serif;
+}
+
+span {
+	font-family: 'Crimson Text', serif;
+}
+
 /* Navbar */
 #mainNav .navbar-brand {
 	color: black;
@@ -21,7 +29,8 @@
 	color: rgb(255, 158, 108);
 }
 
-#mainNav .navbar-nav .nav-item .nav-link:hover {
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link.active {
 	color: rgb(255, 158, 108);
 }
 
@@ -71,13 +80,13 @@
 }
 
 .arrow > a { 
-	color: #C5C5C5; 
+	color: #858585; 
 	text-decoration: none; 
 }
 
 .arrow {
 	text-align: center;
-  	margin: 2% 0;
+  	margin: 3% 0;
 }
 .bounce {
   	-moz-animation: bounce 2s infinite;
@@ -114,8 +123,6 @@
 	height:200px;
 	width:200px;
 	border-radius:100%;
-	border: solid rgb(255, 158, 108);
-	border-width:7px 4px 4px 4px;
 	overflow:hidden;
 	margin: 10px auto;
 }
@@ -148,7 +155,7 @@
 }
 
 .contact-header a:hover {
-	color:rgb(255, 158, 108);;
+	color:rgb(255, 158, 108);
 }
 
 .intro-title {
@@ -160,7 +167,16 @@
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+.intro-title > hr {
+	color: rgb(255, 158, 108);
+}
+
 /* Projects and Work */
+section h2.section-heading {
+	font-size: 2em;
+	font-weight: lighter;
+}
+
 .project-tile {
 	border: 1px solid rgb(153, 153, 153);
 	height: 300px;

@@ -5,11 +5,17 @@
 /* General */
 .title-underline {
 	width: 10%;
-	border-top: 2px solid black;
+	border-top: 1px solid black;
+}
+
+section {
+	padding: 3% 0;
+	margin-bottom: 4%;
 }
 
 p {
 	font-family: 'Crimson Text', serif;
+	font-size: 1.2em;
 }
 
 span {
@@ -134,6 +140,7 @@ span {
 .section-title > h2 {
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
+	font-weight: lighter;
 }
 
 .contact-header {
@@ -165,10 +172,11 @@ span {
 .intro-title > h2 {
 	font-size:2em;
 	font-family: 'Josefin Sans', sans-serif;
+	font-weight: lighter;
 }
 
 .intro-title > hr {
-	color: rgb(255, 158, 108);
+	border-top: 1px solid rgb(255, 158, 108);
 }
 
 /* Projects and Work */

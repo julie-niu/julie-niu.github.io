@@ -34,9 +34,8 @@ class ProjectModal extends React.Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        var selectedProj = Cookies.get('selectedProject');
-        if (this.state.current != selectedProj) {
-            this.setState({current: selectedProj});
+        if (this.state.current != nextProps.current) {
+            this.setState({current: nextProps.current});
         }
     }
 
@@ -56,7 +55,7 @@ class ProjectTile extends React.Component {
     selectProjectCallback(event, proj) {
         Cookies.set('selectedProject', proj);
         this.setState({selected: proj});
-        ReactDOM.render(<ProjectModal></ProjectModal>, document.getElementById('project-root'));
+        ReactDOM.render(<ProjectModal current={proj}></ProjectModal>, document.getElementById('project-root'));
     }
 
     render() {

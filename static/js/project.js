@@ -40,7 +40,7 @@ class ProjectModal extends React.Component {
     }
 
     render() {
-        return <h1>{projects[this.state.current].subtitle}</h1>;
+        return <h1>{projects[this.nextProps.current].subtitle}</h1>;
     }
 }
 

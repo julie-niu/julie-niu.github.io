@@ -57,8 +57,8 @@ section {
   background-color: #fed136;
   border-color: #fed136; }
   .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #fec810 !important;
-    border-color: #fec810 !important;
+    background-color: #fec810 ;
+    border-color: #fec810 ;
     color: white; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important; }

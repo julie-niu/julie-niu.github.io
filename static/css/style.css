@@ -2,6 +2,21 @@
     visibility: hidden;
 }
 
+/* General */
+.title-underline {
+	width: 10%;
+	border-top: 2px solid black;
+}
+
+/* Navbar */
+.navbar-brand {
+	color: rgb(255, 158, 108)
+}
+
+.nav-link:hover {
+	color: rgb(255, 158, 108)
+}
+
 /* Starting landing page */
 #landing {
     background: url(../../media/files/landing.jpg);
@@ -106,6 +121,14 @@
 
 /* Projects and Work */
 .project-tile {
-	border: black solid 1px;
+	border: 1px solid rgb(153, 153, 153);
+	height: 300px;
 }
 
+.portfolio-hover {
+	background-color: rgb(255, 158, 108);
+}
+
+h3.project-name {
+	font-weight: normal;
+}

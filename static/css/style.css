@@ -9,21 +9,21 @@
 }
 
 /* Navbar */
-.navbar-brand {
+#mainNav .navbar-brand {
 	color: rgb(255, 158, 108)
 }
 
-.nav-link:hover {
+#mainNav .navbar-nav .nav-item .nav-link:hover {
 	color: rgb(255, 158, 108)
 }
 
 /* Starting landing page */
 #landing {
-    background: url(../../media/files/landing.jpg);
+    /* background: url(../../media/files/landing.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: fixed; */
 	height: 100vh;
 	min-height: 710px;	
 	padding-top: 60px;
@@ -33,7 +33,7 @@
 #name-plate {
     width: 10vw;
     height: 10vw;
-    background-color: #FFFFFF;
+    background-color: rgb(255, 158, 108);
     margin: auto;
     margin-bottom: 3vh;
     padding-top: 1px;

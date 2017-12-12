@@ -6,11 +6,11 @@
 .title-underline {
 	width: 10%;
 	border-top: 1px solid black;
+	margin-bottom: 4%;
 }
 
 section {
 	padding: 3% 0;
-	margin-bottom: 4%;
 }
 
 p {
@@ -21,6 +21,14 @@ p {
 span {
 	font-family: 'Crimson Text', serif;
 }
+
+::-moz-selection {
+	background: rgb(255, 158, 108);
+	text-shadow: none; }
+  
+::selection {
+	background: rgb(255, 158, 108);
+	text-shadow: none; }
 
 /* Navbar */
 #mainNav .navbar-brand {
@@ -198,4 +206,34 @@ section h2.section-heading {
 
 h3.project-name {
 	font-weight: normal;
+}
+
+/* Contact Me */
+section#contact {
+	background-color: rgb(255, 158, 108);
+	background-image: none;
+}
+
+section#contact .section-heading {
+	color: black;
+}
+
+.form-control {
+	border-radius: 0px;
+	border: none;
+}
+
+::placeholder {
+	color: black;
+}
+
+#sendMessageButton {
+	color: black;
+	background-color: white;
+	border: none;
+}
+
+#sendMessageButton:hover {
+	background-color: #6D6D6D;
+	border-radius: 0px;
 }

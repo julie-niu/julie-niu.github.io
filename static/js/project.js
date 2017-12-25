@@ -22,10 +22,6 @@ const projects = {'MicroInstitution': {
     'WishingTree': {
         title: 'The Wishing Tree',
         subtitle: 'Steel Assemblage'
-    },
-    'default': {
-        title: 'Default',
-        subtitle: 'Default Subtitle'
     }
 };
 
